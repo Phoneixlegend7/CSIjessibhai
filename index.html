@@ -58,15 +58,19 @@
             only 1 guy <span class="highlight">Usopp  </span>.
         </p>
         <p class="author">~ DSP</p>
-        <button class = "js-button">Click HERE!</button>
+        <div id="container"></div>
     </div>
     <script>
-        const button_buy = document.createElement('button');
-        button_buy.value = 'Click Here!';
-        button_buy.addEventListener('onClick', () => {
-            alert('India lost the World Cup ODI anyways..!!');
-        })
+        const button = document.createElement('button');
+        button.textContent = 'Click Me'; // Set the button text
 
+        // Add a click event listener
+        button.addEventListener('click', () => {
+            alert('India LOST WC Anyway!');
+        });
+
+        // Append the button to the container div
+        document.getElementById('container').appendChild(button);
     </script>
 </body>
 </html>
