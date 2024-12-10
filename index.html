@@ -58,9 +58,15 @@
             only 1 guy <span class="highlight">Usopp  </span>.
         </p>
         <p class="author">~ DSP</p>
+        <button class = "js-button">Click HERE!</button>
     </div>
     <script>
-        alert('India Lost ODI World Cup');
+        const button_buy = document.createElement('button');
+        button_buy.value = 'Click Here!';
+        button_buy.addEventListener('onClick', () => {
+            alert('India lost the World Cup ODI anyways..!!');
+        })
+
     </script>
 </body>
 </html>
